@@ -3,34 +3,14 @@ gcs:
   bucket: qwiklabs-gcp-00-590ac91686ca-spinnaker-config
   project: qwiklabs-gcp-00-590ac91686ca
   jsonKey: '{
-  "type": "service_account",
-  "project_id": "qwiklabs-gcp-00-590ac91686ca",
-  "private_key_id": "6ae54262b7effeaf8ab3992183ba1eac8164c5cb",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDC74vt9fCg1/Je\nxyd3E8psu+QmalWfahyJYpaWeZvbDAVGcBCIFzXbdBxUUl44nt0U4BfW4VcAalK7\nMn7o0UPKaXnZBTUVKZmcK4q5yCYSCa0ANCRtJ3DArM0mDm/C+rhEtrNrrZtb+Cor\nQqi4P9ORiLtGNLHXdeuE8maEG3MJZFEcCesc+YAjVpsJqyX3HEdI1JH5Hgle71Gw\nWZ+M9CR4xodfMXubm71ezi6/uIDsfe07QAWSxYhINB+eivd//p2CQJ4BzCT+ioEL\n0Y9OfP2N4RYaqjqRMcjQvOylQ5HslLgNG+QDfplEJVXCsUQA7zQqQFI/i2iGZGmw\nrNYPRJnLAgMBAAECggEAGKsCT3VKo2VbC8NdVc7wqXHdcpRiNsTRd6aSMoM7xdca\nPnT6opN4Ap1e4wzJVOua7oQCgEljyRmrU8/ACkDxDdxAdHDEQY6ncavQ56b8VQFZ\nyHzQtJTDyp4TbTgbzIC4cM7t8De36/DWOpiPi+wHyeg+SqlrF+ju35QNL7U0NCvV\nIVRwp68zWifwjUhMRC/JBGM5Ydu7KIZlHPak+N+GWozYw7UuBvlGX6pqGc2exht/\nhP5gRaXJVRKPLxg2WjkIYSB0Xv3/ezTKt2A++whtK9B7ghD1mcgaNADyXX+Lf28S\nElY23mDX6pQ8jRnPZENeJ9TslktHIzTUG93mKt+CgQKBgQDjC5UaO8YmdnOOkak0\n6kaHuwU2Dli48cPCiCGBrNUilC291mOU42Uz/uRr0s4oAmod/TCxFcNKgEnnByLl\nviQDaHuO+TBsG2W4Y6C1jTRvxaj/VM7zgetF5K9hrYSe3OlP7rp1Qwu2qToPv/7s\n8P60BHy/Fr4dhdMWnxltaRckHQKBgQDby6y6nA9zEZ8OHlcXBgrYcu052KsQv2/0\nIurYapnYbKWw0p9B4PsFuUhzm63T8VVSxExo8WFDs6CqIp65HGtlb0T4qTbZ28Sf\nH7QHgNlW/nRyZKtMU1av0lsNPP8KzKsH7mHOluN2a3WsCjznAjChtzO3XGrsYvn3\n15Bh9TCBBwKBgAt+rJ/VYuTTnmobacuqCMQabdscwtUqOFUC+19LVscXZXF1Bzmk\ngZ0uTHZBB/rylFjMVsjAZ1DASf2OWO/0vnIFuiu05gSzJmU9dgd7DKqUAUhcDNY7\nP6QcPdzeIhbA7HcFiR8is9cdnjjp6Ygpc1u91mr+RcXM3rEIgQsPBQLpAoGBANYi\na2ju7BpWO5i8tGpo554S8c2eqqLJb5/xeM1ZpgL1bsODn8bGEqlz5wNC06qd/1uA\nhVTkfbdAxLGcwvhjmLodGpwL97VuZ/QDJhj9TkFz7C0aqMzWkKkBDtYp6+wwlBxJ\nAZ8M4BSaAu2Wl9kUCB81Zjwo3L7qetAcgrz87MF3AoGAGdP8eFhRgeOwhfhTWu4B\nbqJYDUnPlMFRoWYBLHuH9wsJGCDK5wTpJYvtigtLmnygnLhtUIMgc2wINgK6ykBI\noqBr1mr6vxjHnclE/ONqSHWTH6zI37sJxdD7haOdKQxu0AlREI9HJsC3Q/G0Xni5\nx5u2duVg1QQ7sitBkUbpCK8=\n-----END PRIVATE KEY-----\n",
-  "client_email": "spinnaker-account@qwiklabs-gcp-00-590ac91686ca.iam.gserviceaccount.com",
-  "client_id": "110138281500456747181",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/spinnaker-account%40qwiklabs-gcp-00-590ac91686ca.iam.gserviceaccount.com",
-  "universe_domain": "googleapis.com"
+ 
 }'
 dockerRegistries:
 - name: gcr
   address: https://gcr.io
   username: _json_key
   password: '{
-  "type": "service_account",
-  "project_id": "qwiklabs-gcp-00-590ac91686ca",
-  "private_key_id": "6ae54262b7effeaf8ab3992183ba1eac8164c5cb",
-  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQDC74vt9fCg1/Je\nxyd3E8psu+QmalWfahyJYpaWeZvbDAVGcBCIFzXbdBxUUl44nt0U4BfW4VcAalK7\nMn7o0UPKaXnZBTUVKZmcK4q5yCYSCa0ANCRtJ3DArM0mDm/C+rhEtrNrrZtb+Cor\nQqi4P9ORiLtGNLHXdeuE8maEG3MJZFEcCesc+YAjVpsJqyX3HEdI1JH5Hgle71Gw\nWZ+M9CR4xodfMXubm71ezi6/uIDsfe07QAWSxYhINB+eivd//p2CQJ4BzCT+ioEL\n0Y9OfP2N4RYaqjqRMcjQvOylQ5HslLgNG+QDfplEJVXCsUQA7zQqQFI/i2iGZGmw\nrNYPRJnLAgMBAAECggEAGKsCT3VKo2VbC8NdVc7wqXHdcpRiNsTRd6aSMoM7xdca\nPnT6opN4Ap1e4wzJVOua7oQCgEljyRmrU8/ACkDxDdxAdHDEQY6ncavQ56b8VQFZ\nyHzQtJTDyp4TbTgbzIC4cM7t8De36/DWOpiPi+wHyeg+SqlrF+ju35QNL7U0NCvV\nIVRwp68zWifwjUhMRC/JBGM5Ydu7KIZlHPak+N+GWozYw7UuBvlGX6pqGc2exht/\nhP5gRaXJVRKPLxg2WjkIYSB0Xv3/ezTKt2A++whtK9B7ghD1mcgaNADyXX+Lf28S\nElY23mDX6pQ8jRnPZENeJ9TslktHIzTUG93mKt+CgQKBgQDjC5UaO8YmdnOOkak0\n6kaHuwU2Dli48cPCiCGBrNUilC291mOU42Uz/uRr0s4oAmod/TCxFcNKgEnnByLl\nviQDaHuO+TBsG2W4Y6C1jTRvxaj/VM7zgetF5K9hrYSe3OlP7rp1Qwu2qToPv/7s\n8P60BHy/Fr4dhdMWnxltaRckHQKBgQDby6y6nA9zEZ8OHlcXBgrYcu052KsQv2/0\nIurYapnYbKWw0p9B4PsFuUhzm63T8VVSxExo8WFDs6CqIp65HGtlb0T4qTbZ28Sf\nH7QHgNlW/nRyZKtMU1av0lsNPP8KzKsH7mHOluN2a3WsCjznAjChtzO3XGrsYvn3\n15Bh9TCBBwKBgAt+rJ/VYuTTnmobacuqCMQabdscwtUqOFUC+19LVscXZXF1Bzmk\ngZ0uTHZBB/rylFjMVsjAZ1DASf2OWO/0vnIFuiu05gSzJmU9dgd7DKqUAUhcDNY7\nP6QcPdzeIhbA7HcFiR8is9cdnjjp6Ygpc1u91mr+RcXM3rEIgQsPBQLpAoGBANYi\na2ju7BpWO5i8tGpo554S8c2eqqLJb5/xeM1ZpgL1bsODn8bGEqlz5wNC06qd/1uA\nhVTkfbdAxLGcwvhjmLodGpwL97VuZ/QDJhj9TkFz7C0aqMzWkKkBDtYp6+wwlBxJ\nAZ8M4BSaAu2Wl9kUCB81Zjwo3L7qetAcgrz87MF3AoGAGdP8eFhRgeOwhfhTWu4B\nbqJYDUnPlMFRoWYBLHuH9wsJGCDK5wTpJYvtigtLmnygnLhtUIMgc2wINgK6ykBI\noqBr1mr6vxjHnclE/ONqSHWTH6zI37sJxdD7haOdKQxu0AlREI9HJsC3Q/G0Xni5\nx5u2duVg1QQ7sitBkUbpCK8=\n-----END PRIVATE KEY-----\n",
-  "client_email": "spinnaker-account@qwiklabs-gcp-00-590ac91686ca.iam.gserviceaccount.com",
-  "client_id": "110138281500456747181",
-  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
-  "token_uri": "https://oauth2.googleapis.com/token",
-  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
-  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/spinnaker-account%40qwiklabs-gcp-00-590ac91686ca.iam.gserviceaccount.com",
-  "universe_domain": "googleapis.com"
+  
 }'
   email: 1234@5678.com
 # Disable minio as the default storage backend
