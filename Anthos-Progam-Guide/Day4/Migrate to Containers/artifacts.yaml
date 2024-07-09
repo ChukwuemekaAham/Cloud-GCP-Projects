@@ -1,0 +1,6 @@
+images:
+    - name: gcr.io/qwiklabs-gcp-02-5b814546322d/source-vm
+      context: ./
+      dockerfile: Dockerfile
+deploy:
+    - ./deployment_spec.yaml

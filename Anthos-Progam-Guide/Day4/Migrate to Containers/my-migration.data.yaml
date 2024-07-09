@@ -1,0 +1,22 @@
+## Data volumes for data migration.
+## Each volume can either refer an existing PVC in the processing cluster, or contain a spec for a new PVC to be created.
+## The list of folders in each entry get copied to the PVCs root.
+## Here's an example:
+##
+#volumes:
+#- deploymentPvcName: some-pvc
+#  existingPvc:
+#    name: my-pvc
+#  folders:
+#  - /bin
+#  - /opt
+#- deploymentPvcName: some-new-pvc
+#  folders:
+#  - /etc
+#  newPvc:
+#    spec:
+#      accessModes:
+#      - ReadWriteOnce
+#      resources:
+#        requests:
+#          storage: 10G

@@ -1,0 +1,330 @@
+tmpfiles:
+    - type: Remove
+      ignore_error: false
+      path: /etc/group.lock
+      mode: ""
+      user: ""
+      group: ""
+      argument: ""
+    - type: Remove
+      ignore_error: false
+      path: /etc/gshadow.lock
+      mode: ""
+      user: ""
+      group: ""
+      argument: ""
+    - type: ReplaceSymlink
+      ignore_error: false
+      path: /etc/mtab
+      mode: ""
+      user: ""
+      group: ""
+      argument: ../proc/self/mounts
+    - type: Remove
+      ignore_error: false
+      path: /etc/passwd.lock
+      mode: ""
+      user: ""
+      group: ""
+      argument: ""
+    - type: Remove
+      ignore_error: false
+      path: /etc/shadow.lock
+      mode: ""
+      user: ""
+      group: ""
+      argument: ""
+    - type: Remove
+      ignore_error: false
+      path: /etc/subgid.lock
+      mode: ""
+      user: ""
+      group: ""
+      argument: ""
+    - type: Remove
+      ignore_error: false
+      path: /etc/subuid.lock
+      mode: ""
+      user: ""
+      group: ""
+      argument: ""
+    - type: Remove
+      ignore_error: false
+      path: /fastboot
+      mode: ""
+      user: ""
+      group: ""
+      argument: ""
+    - type: Remove
+      ignore_error: false
+      path: /forcefsck
+      mode: ""
+      user: ""
+      group: ""
+      argument: ""
+    - type: Remove
+      ignore_error: false
+      path: /forcequotacheck
+      mode: ""
+      user: ""
+      group: ""
+      argument: ""
+    - type: Symlink
+      ignore_error: false
+      path: /run/initctl
+      mode: ""
+      user: ""
+      group: ""
+      argument: /run/systemd/initctl/fifo
+    - type: CreateDirectory
+      ignore_error: false
+      path: /run/lock/lvm
+      mode: "0700"
+      user: root
+      group: root
+      argument: ""
+    - type: CreateDirectory
+      ignore_error: false
+      path: /run/lock/subsys
+      mode: "0755"
+      user: root
+      group: root
+      argument: ""
+    - type: CreateDirectory
+      ignore_error: false
+      path: /run/log
+      mode: "0755"
+      user: root
+      group: root
+      argument: ""
+    - type: CreateDirectory
+      ignore_error: false
+      path: /run/lvm
+      mode: "0700"
+      user: root
+      group: root
+      argument: ""
+    - type: CreateDirectory
+      ignore_error: false
+      path: /run/sendsigs.omit.d
+      mode: "0755"
+      user: root
+      group: root
+      argument: ""
+    - type: Symlink
+      ignore_error: false
+      path: /run/shm
+      mode: ""
+      user: ""
+      group: ""
+      argument: /dev/shm
+    - type: CreateDirectory
+      ignore_error: false
+      path: /run/systemd/ask-password
+      mode: "0755"
+      user: root
+      group: root
+      argument: ""
+    - type: CreateDirectory
+      ignore_error: false
+      path: /run/systemd/machines
+      mode: "0755"
+      user: root
+      group: root
+      argument: ""
+    - type: CreateDirectory
+      ignore_error: false
+      path: /run/systemd/netif
+      mode: "0755"
+      user: systemd-network
+      group: systemd-network
+      argument: ""
+    - type: CreateDirectory
+      ignore_error: false
+      path: /run/systemd/netif/leases
+      mode: "0755"
+      user: systemd-network
+      group: systemd-network
+      argument: ""
+    - type: CreateDirectory
+      ignore_error: false
+      path: /run/systemd/netif/links
+      mode: "0755"
+      user: systemd-network
+      group: systemd-network
+      argument: ""
+    - type: CreateDirectory
+      ignore_error: false
+      path: /run/systemd/seats
+      mode: "0755"
+      user: root
+      group: root
+      argument: ""
+    - type: CreateDirectory
+      ignore_error: false
+      path: /run/systemd/sessions
+      mode: "0755"
+      user: root
+      group: root
+      argument: ""
+    - type: CreateDirectory
+      ignore_error: false
+      path: /run/systemd/shutdown
+      mode: "0755"
+      user: root
+      group: root
+      argument: ""
+    - type: CreateDirectory
+      ignore_error: false
+      path: /run/systemd/users
+      mode: "0755"
+      user: root
+      group: root
+      argument: ""
+    - type: CreateDirectory
+      ignore_error: false
+      path: /run/user
+      mode: "0755"
+      user: root
+      group: root
+      argument: ""
+    - type: CreateDirectory
+      ignore_error: false
+      path: /tmp
+      mode: "1777"
+      user: root
+      group: root
+      argument: ""
+    - type: CreateDirectory
+      ignore_error: false
+      path: /tmp/.ICE-unix
+      mode: "1777"
+      user: root
+      group: root
+      argument: ""
+    - type: CreateDirectory
+      ignore_error: false
+      path: /tmp/.Test-unix
+      mode: "1777"
+      user: root
+      group: root
+      argument: ""
+    - type: CreateDirectory
+      ignore_error: false
+      path: /tmp/.X11-unix
+      mode: "1777"
+      user: root
+      group: root
+      argument: ""
+    - type: CreateDirectory
+      ignore_error: false
+      path: /tmp/.XIM-unix
+      mode: "1777"
+      user: root
+      group: root
+      argument: ""
+    - type: Remove
+      ignore_error: false
+      path: /tmp/.X[0-9]*-lock
+      mode: ""
+      user: ""
+      group: ""
+      argument: ""
+    - type: CreateDirectory
+      ignore_error: false
+      path: /tmp/.font-unix
+      mode: "1777"
+      user: root
+      group: root
+      argument: ""
+    - type: CreateDirectory
+      ignore_error: false
+      path: /var/cache
+      mode: "0755"
+      user: ""
+      group: ""
+      argument: ""
+    - type: CreateDirectory
+      ignore_error: false
+      path: /var/lib
+      mode: "0755"
+      user: ""
+      group: ""
+      argument: ""
+    - type: Symlink
+      ignore_error: false
+      path: /var/lib/dbus/machine-id
+      mode: ""
+      user: ""
+      group: ""
+      argument: /etc/machine-id
+    - type: CreateDirectory
+      ignore_error: false
+      path: /var/lib/systemd
+      mode: "0755"
+      user: root
+      group: root
+      argument: ""
+    - type: CreateDirectory
+      ignore_error: false
+      path: /var/lib/systemd/coredump
+      mode: "0755"
+      user: root
+      group: root
+      argument: ""
+    - type: Symlink
+      ignore_error: false
+      path: /var/lock
+      mode: ""
+      user: ""
+      group: ""
+      argument: ../run/lock
+    - type: CreateDirectory
+      ignore_error: false
+      path: /var/log
+      mode: "0755"
+      user: ""
+      group: ""
+      argument: ""
+    - type: CreateDirectory
+      ignore_error: false
+      path: /var/log
+      mode: "0775"
+      user: root
+      group: syslog
+      argument: ""
+    - type: Symlink
+      ignore_error: false
+      path: /var/run
+      mode: ""
+      user: ""
+      group: ""
+      argument: ../run
+    - type: CreateDirectory
+      ignore_error: false
+      path: /var/run/sshd
+      mode: "0755"
+      user: root
+      group: root
+      argument: ""
+    - type: CreateDirectory
+      ignore_error: false
+      path: /var/run/sudo
+      mode: "0711"
+      user: root
+      group: root
+      argument: ""
+    - type: CreateDirectory
+      ignore_error: false
+      path: /var/run/sudo/ts
+      mode: "0700"
+      user: root
+      group: root
+      argument: ""
+    - type: CreateDirectory
+      ignore_error: false
+      path: /var/spool
+      mode: "0755"
+      user: ""
+      group: ""
+      argument: ""

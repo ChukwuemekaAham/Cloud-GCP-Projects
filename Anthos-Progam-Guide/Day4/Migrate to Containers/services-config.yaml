@@ -1,0 +1,76 @@
+version: v1beta1
+env: []
+applications:
+    - name: apache2
+      type: forking
+      start:
+        - cmd: /etc/init.d/apache2 start
+      status:
+        cmd: /etc/init.d/apache2 status
+      umask: null
+      envfile:
+        path: ""
+        ignore_non_exist: false
+      probed: false
+    - name: atd
+      type: simple
+      start:
+        - cmd: /usr/sbin/atd -f
+      umask: 18
+      envfile:
+        path: ""
+        ignore_non_exist: false
+      probed: false
+    - name: cron
+      type: simple
+      start:
+        - cmd: /usr/sbin/cron -f $EXTRA_OPTS
+      umask: 18
+      envfile:
+        path: /etc/default/cron
+        ignore_non_exist: true
+      probed: false
+    - name: rsync
+      type: forking
+      start:
+        - cmd: /etc/init.d/rsync start
+      status:
+        cmd: /etc/init.d/rsync status
+      umask: null
+      envfile:
+        path: ""
+        ignore_non_exist: false
+      probed: false
+    - name: ssh
+      type: notify
+      prestart:
+        - cmd: /usr/sbin/sshd -t
+      start:
+        - cmd: /usr/sbin/sshd -D $SSHD_OPTS
+      umask: 18
+      envfile:
+        path: /etc/default/ssh
+        ignore_non_exist: true
+      probed: false
+    - name: ssh@
+      type: simple
+      start:
+        - cmd: /usr/sbin/sshd -i $SSHD_OPTS
+          ignore_errors: true
+      umask: 18
+      envfile:
+        path: /etc/default/ssh
+        ignore_non_exist: true
+      probed: false
+    - name: sshguard
+      type: simple
+      prestart:
+        - cmd: /usr/lib/sshguard/firewall enable
+      start:
+        - cmd: /usr/sbin/sshguard -i /run/sshguard.pid -w $WHITELIST $LOGFILES $ARGS
+      pidfile: /run/sshguard.pid
+      umask: 18
+      envfile:
+        path: /etc/default/sshguard
+        ignore_non_exist: true
+      probed: false

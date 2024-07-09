@@ -1,0 +1,92 @@
+
+# Your workload seems to support the new runtime which is more compatible with various GKE services, faster on start time and enables workload deployment to GKE Autopilot and Cloud Run. To use the new runtime, please change v2kServiceManager value to true.
+v2kServiceManager: true
+global:
+  # Files and directories to exclude from the migration, in rsync format.
+  filters:
+  - '- *.swp'
+  - '- /etc/fstab'
+  - '- /boot/'
+  - '- /proc/kcore'
+  - '- /tmp/*'
+  - '- /var/log/*.log*'
+  - '- /var/log/*/*.log*'
+  - '- /var/log/faillog'
+  - '- /var/log/lastlog'
+  - '- /var/log/[wb]tmp*'
+  - + /var/cache/*/
+  - '- /var/cache/*'
+  - '- /var/log/journal/'
+  - '- /var/m4a/*'
+image:
+  
+  # Review and set the name for extracted non-runnable base image, if an image tag is not specified, a random tag will be auto-generated when the image is built.
+  base: source-vm-non-runnable-base
+  
+  # Review and set the name for runnable container image, if an image tag is not specified, a random tag will be auto-generated when the image is built.
+  name: source-vm
+  
+  # Disable system services that do not need to be executed at the migrated workload containers.
+  # Enable the 'probed' property to include system services in the container health checks.
+  systemServices:
+  - enabled: true
+    name: apache2
+    probed: false
+  - enabled: true
+    name: atd
+    probed: false
+  - enabled: true
+    name: cron
+    probed: false
+  - enabled: true
+    name: rsync
+    probed: false
+  - enabled: true
+    name: ssh
+    probed: false
+  - enabled: true
+    name: ssh@
+    probed: false
+  - enabled: true
+    name: sshguard
+    probed: false
+deployment:
+  
+  # Review and set the app-name for your StatefulSet or Deployment YAML spec.
+  appName: source-vm
+  
+  # Deploy network objects to allow easy access to open ports.
+  # For example:
+  # endpoints:
+  # - name: source-vm-httpd
+  #   port: 80
+  #   protocol: TCP
+  # - name: source-vm-redis
+  #   port: 6379
+  #   protocol: TCP
+
+  # No workload port details were detected, preventing network objects auto generation.
+  # Please consider running the containerization fit assessment tool.
+  # If you did, check if the discovery phase failed.
+
+  logPaths:
+  - appName: apache-acccess
+    globs:
+    - /var/log/apache*/access.log
+  - appName: apache-error
+    globs:
+    - /var/log/apache*/error.log
+  
+  # By default, this health probe configuration will be used. Review, chagne or remove it.
+  # see: https://kubernetes.io/docs/tasks/configure-pod-container/configure-liveness-readiness-startup-probes/
+  probes:
+    livenessProbe:
+      exec:
+        command:
+        - /gamma
+        - probe
+    readinessProbe:
+      exec:
+        command:
+        - /gamma
+        - probe

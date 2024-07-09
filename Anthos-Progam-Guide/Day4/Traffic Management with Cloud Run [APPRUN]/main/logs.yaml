@@ -1,0 +1,5 @@
+logs:
+  apache-acccess:
+  - /var/log/apache*/access.log
+  apache-error:
+  - /var/log/apache*/error.log

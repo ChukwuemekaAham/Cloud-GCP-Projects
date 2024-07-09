@@ -1,0 +1,82 @@
+# Stateless application specification
+# The Deployment creates a single replicated Pod, indicated by the 'replicas' field
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  labels:
+    anthos-migrate.cloud.google.com/type: linux-container
+    app: source-vm
+    migrate-for-anthos-optimization: "true"
+    migrate-for-anthos-version: v1.14.0
+  name: source-vm
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      anthos-migrate.cloud.google.com/type: linux-container
+      app: source-vm
+      migrate-for-anthos-optimization: "true"
+      migrate-for-anthos-version: v1.14.0
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+      labels:
+        anthos-migrate.cloud.google.com/type: linux-container
+        app: source-vm
+        migrate-for-anthos-optimization: "true"
+        migrate-for-anthos-version: v1.14.0
+    spec:
+      containers:
+      - env:
+        - name: HC_V2K_SERVICE_MANAGER
+          value: "true"
+        image: gcr.io/qwiklabs-gcp-02-5b814546322d/source-vm:5-22-2023--14-58-33
+        imagePullPolicy: IfNotPresent
+        livenessProbe:
+          exec:
+            command:
+            - /gamma
+            - probe
+        name: source-vm
+        readinessProbe:
+          exec:
+            command:
+            - /gamma
+            - probe
+        resources: {}
+
+---
+# Headless Service specification -
+# No load-balancing, and a single cluster internal IP, only reachable from within the cluster
+# The Kubernetes endpoints controller will modify the DNS configuration to return records (addresses) that point to the Pods, which are labeled with "app": "source-vm"
+apiVersion: v1
+kind: Service
+metadata:
+  creationTimestamp: null
+  labels:
+    anthos-migrate.cloud.google.com/type: linux-container
+    migrate-for-anthos-optimization: "true"
+    migrate-for-anthos-version: v1.14.0
+  name: source-vm
+spec:
+  clusterIP: None
+  selector:
+    app: source-vm
+  type: ClusterIP
+
+---
+
+apiVersion: v1
+kind: Service
+metadata:
+  name: my-service
+spec:
+  selector:
+    app: source-vm
+  ports:
+    - protocol: TCP
+      port: 80
+      targetPort: 80
+  type: LoadBalancer
