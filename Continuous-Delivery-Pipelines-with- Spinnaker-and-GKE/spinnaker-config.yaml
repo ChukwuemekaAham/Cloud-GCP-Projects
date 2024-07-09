@@ -2,16 +2,12 @@ gcs:
   enabled: true
   bucket: qwiklabs-gcp-00-590ac91686ca-spinnaker-config
   project: qwiklabs-gcp-00-590ac91686ca
-  jsonKey: '{
- 
-}'
+  jsonKey: '{}'
 dockerRegistries:
 - name: gcr
   address: https://gcr.io
   username: _json_key
-  password: '{
-  
-}'
+  password: '{}'
   email: 1234@5678.com
 # Disable minio as the default storage backend
 minio:

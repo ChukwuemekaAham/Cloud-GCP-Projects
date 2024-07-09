@@ -1,0 +1,716 @@
+[
+  {
+    "insertId": "1hk7h3df8cfk5z",
+    "jsonPayload": {
+      "google.monitoring.v3.UptimeCheckConfig": {
+        "validate_ssl": false,
+        "acceptable_response_codes": [
+          "CLASS_2XX"
+        ],
+        "period": 60,
+        "timeout": 10,
+        "content_matcher": "",
+        "request_headers": {},
+        "mask_headers": false
+      },
+      "google.monitoring.v3.UptimeCheckResult": {
+        "content_mismatch": false,
+        "error_code": "HOST_UNREACHABLE"
+      }
+    },
+    "httpRequest": {
+      "requestMethod": "GET",
+      "requestUrl": "34.30.254.241:80",
+      "latency": "10s",
+      "protocol": "HTTP"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "project_id": "qwiklabs-gcp-03-ab8887b90483",
+        "instance_id": "6416223712158181714",
+        "zone": "us-central1-a"
+      }
+    },
+    "timestamp": "2023-03-12T15:11:07.330090667Z",
+    "severity": "NOTICE",
+    "labels": {
+      "checker_location": "sa-brazil-sao_paulo",
+      "check_id": "frontend-servers-uptime-IQMJ4enIDW4"
+    },
+    "logName": "projects/qwiklabs-gcp-03-dba14152469e/logs/monitoring.googleapis.com%2Fuptime_checks",
+    "receiveTimestamp": "2023-03-12T15:11:07.505720932Z"
+  },
+  {
+    "insertId": "tpcaxmf4ncrks",
+    "jsonPayload": {
+      "google.monitoring.v3.UptimeCheckConfig": {
+        "acceptable_response_codes": [
+          "CLASS_2XX"
+        ],
+        "period": 60,
+        "mask_headers": false,
+        "validate_ssl": false,
+        "timeout": 10,
+        "request_headers": {},
+        "content_matcher": ""
+      },
+      "google.monitoring.v3.UptimeCheckResult": {
+        "error_code": "HOST_UNREACHABLE",
+        "content_mismatch": false
+      }
+    },
+    "httpRequest": {
+      "requestMethod": "GET",
+      "requestUrl": "34.30.254.241:80",
+      "latency": "10s",
+      "protocol": "HTTP"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "instance_id": "6416223712158181714",
+        "zone": "us-central1-a",
+        "project_id": "qwiklabs-gcp-03-ab8887b90483"
+      }
+    },
+    "timestamp": "2023-03-12T15:11:19.471595633Z",
+    "severity": "NOTICE",
+    "labels": {
+      "checker_location": "apac-singapore",
+      "check_id": "frontend-servers-uptime-IQMJ4enIDW4"
+    },
+    "logName": "projects/qwiklabs-gcp-03-dba14152469e/logs/monitoring.googleapis.com%2Fuptime_checks",
+    "receiveTimestamp": "2023-03-12T15:11:19.745363415Z"
+  },
+  {
+    "insertId": "sv1jmsfcjrux4",
+    "jsonPayload": {
+      "google.monitoring.v3.UptimeCheckConfig": {
+        "acceptable_response_codes": [
+          "CLASS_2XX"
+        ],
+        "period": 60,
+        "validate_ssl": false,
+        "request_headers": {},
+        "timeout": 10,
+        "mask_headers": false,
+        "content_matcher": ""
+      },
+      "google.monitoring.v3.UptimeCheckResult": {
+        "error_code": "HOST_UNREACHABLE",
+        "content_mismatch": false
+      }
+    },
+    "httpRequest": {
+      "requestMethod": "GET",
+      "requestUrl": "34.30.254.241:80",
+      "latency": "10s",
+      "protocol": "HTTP"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "project_id": "qwiklabs-gcp-03-ab8887b90483",
+        "instance_id": "6416223712158181714",
+        "zone": "us-central1-a"
+      }
+    },
+    "timestamp": "2023-03-12T15:11:34.098966370Z",
+    "severity": "NOTICE",
+    "labels": {
+      "check_id": "frontend-servers-uptime-IQMJ4enIDW4",
+      "checker_location": "usa-iowa"
+    },
+    "logName": "projects/qwiklabs-gcp-03-dba14152469e/logs/monitoring.googleapis.com%2Fuptime_checks",
+    "receiveTimestamp": "2023-03-12T15:11:34.155310712Z"
+  },
+  {
+    "insertId": "1km94ijf92f2fq",
+    "jsonPayload": {
+      "google.monitoring.v3.UptimeCheckResult": {
+        "content_mismatch": false,
+        "error_code": "HOST_UNREACHABLE"
+      },
+      "google.monitoring.v3.UptimeCheckConfig": {
+        "timeout": 10,
+        "mask_headers": false,
+        "content_matcher": "",
+        "acceptable_response_codes": [
+          "CLASS_2XX"
+        ],
+        "request_headers": {},
+        "period": 60,
+        "validate_ssl": false
+      }
+    },
+    "httpRequest": {
+      "requestMethod": "GET",
+      "requestUrl": "34.30.254.241:80",
+      "latency": "10s",
+      "protocol": "HTTP"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "project_id": "qwiklabs-gcp-03-ab8887b90483",
+        "zone": "us-central1-a",
+        "instance_id": "6416223712158181714"
+      }
+    },
+    "timestamp": "2023-03-12T15:11:34.421327248Z",
+    "severity": "NOTICE",
+    "labels": {
+      "check_id": "frontend-servers-uptime-IQMJ4enIDW4",
+      "checker_location": "eur-belgium"
+    },
+    "logName": "projects/qwiklabs-gcp-03-dba14152469e/logs/monitoring.googleapis.com%2Fuptime_checks",
+    "receiveTimestamp": "2023-03-12T15:11:34.571898910Z"
+  },
+  {
+    "insertId": "18esqnlfew2pog",
+    "jsonPayload": {
+      "google.monitoring.v3.UptimeCheckConfig": {
+        "request_headers": {},
+        "timeout": 10,
+        "mask_headers": false,
+        "validate_ssl": false,
+        "period": 60,
+        "acceptable_response_codes": [
+          "CLASS_2XX"
+        ],
+        "content_matcher": ""
+      },
+      "google.monitoring.v3.UptimeCheckResult": {
+        "error_code": "HOST_UNREACHABLE",
+        "content_mismatch": false
+      }
+    },
+    "httpRequest": {
+      "requestMethod": "GET",
+      "requestUrl": "34.30.254.241:80",
+      "latency": "10s",
+      "protocol": "HTTP"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "zone": "us-central1-a",
+        "project_id": "qwiklabs-gcp-03-ab8887b90483",
+        "instance_id": "6416223712158181714"
+      }
+    },
+    "timestamp": "2023-03-12T15:11:46.027336857Z",
+    "severity": "NOTICE",
+    "labels": {
+      "check_id": "frontend-servers-uptime-IQMJ4enIDW4",
+      "checker_location": "usa-oregon"
+    },
+    "logName": "projects/qwiklabs-gcp-03-dba14152469e/logs/monitoring.googleapis.com%2Fuptime_checks",
+    "receiveTimestamp": "2023-03-12T15:11:46.119696182Z"
+  },
+  {
+    "insertId": "8lyx6nf6s3nwf",
+    "jsonPayload": {
+      "google.monitoring.v3.UptimeCheckConfig": {
+        "validate_ssl": false,
+        "request_headers": {},
+        "timeout": 10,
+        "content_matcher": "",
+        "period": 60,
+        "acceptable_response_codes": [
+          "CLASS_2XX"
+        ],
+        "mask_headers": false
+      },
+      "google.monitoring.v3.UptimeCheckResult": {
+        "content_mismatch": false,
+        "error_code": "HOST_UNREACHABLE"
+      }
+    },
+    "httpRequest": {
+      "requestMethod": "GET",
+      "requestUrl": "34.30.254.241:80",
+      "latency": "10s",
+      "protocol": "HTTP"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "instance_id": "6416223712158181714",
+        "project_id": "qwiklabs-gcp-03-ab8887b90483",
+        "zone": "us-central1-a"
+      }
+    },
+    "timestamp": "2023-03-12T15:11:46.591480742Z",
+    "severity": "NOTICE",
+    "labels": {
+      "check_id": "frontend-servers-uptime-IQMJ4enIDW4",
+      "checker_location": "usa-virginia"
+    },
+    "logName": "projects/qwiklabs-gcp-03-dba14152469e/logs/monitoring.googleapis.com%2Fuptime_checks",
+    "receiveTimestamp": "2023-03-12T15:11:46.675616993Z"
+  },
+  {
+    "insertId": "sazrmzf6bx2vp",
+    "jsonPayload": {
+      "google.monitoring.v3.UptimeCheckConfig": {
+        "acceptable_response_codes": [
+          "CLASS_2XX"
+        ],
+        "content_matcher": "",
+        "period": 60,
+        "mask_headers": false,
+        "request_headers": {},
+        "timeout": 10,
+        "validate_ssl": false
+      },
+      "google.monitoring.v3.UptimeCheckResult": {
+        "error_code": "HOST_UNREACHABLE",
+        "content_mismatch": false
+      }
+    },
+    "httpRequest": {
+      "requestMethod": "GET",
+      "requestUrl": "34.30.254.241:80",
+      "latency": "10s",
+      "protocol": "HTTP"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "instance_id": "6416223712158181714",
+        "zone": "us-central1-a",
+        "project_id": "qwiklabs-gcp-03-ab8887b90483"
+      }
+    },
+    "timestamp": "2023-03-12T15:12:07.188118249Z",
+    "severity": "NOTICE",
+    "labels": {
+      "checker_location": "sa-brazil-sao_paulo",
+      "check_id": "frontend-servers-uptime-IQMJ4enIDW4"
+    },
+    "logName": "projects/qwiklabs-gcp-03-dba14152469e/logs/monitoring.googleapis.com%2Fuptime_checks",
+    "receiveTimestamp": "2023-03-12T15:12:07.369401078Z"
+  },
+  {
+    "insertId": "a735uf8jes2f",
+    "jsonPayload": {
+      "google.monitoring.v3.UptimeCheckConfig": {
+        "timeout": 10,
+        "validate_ssl": false,
+        "content_matcher": "",
+        "request_headers": {},
+        "acceptable_response_codes": [
+          "CLASS_2XX"
+        ],
+        "period": 60,
+        "mask_headers": false
+      },
+      "google.monitoring.v3.UptimeCheckResult": {
+        "content_mismatch": false,
+        "error_code": "HOST_UNREACHABLE"
+      }
+    },
+    "httpRequest": {
+      "requestMethod": "GET",
+      "requestUrl": "34.30.254.241:80",
+      "latency": "10s",
+      "protocol": "HTTP"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "zone": "us-central1-a",
+        "project_id": "qwiklabs-gcp-03-ab8887b90483",
+        "instance_id": "6416223712158181714"
+      }
+    },
+    "timestamp": "2023-03-12T15:12:19.467066680Z",
+    "severity": "NOTICE",
+    "labels": {
+      "checker_location": "apac-singapore",
+      "check_id": "frontend-servers-uptime-IQMJ4enIDW4"
+    },
+    "logName": "projects/qwiklabs-gcp-03-dba14152469e/logs/monitoring.googleapis.com%2Fuptime_checks",
+    "receiveTimestamp": "2023-03-12T15:12:19.734796152Z"
+  },
+  {
+    "insertId": "964jgmfcmaane",
+    "jsonPayload": {
+      "google.monitoring.v3.UptimeCheckResult": {
+        "content_mismatch": false,
+        "error_code": "HOST_UNREACHABLE"
+      },
+      "google.monitoring.v3.UptimeCheckConfig": {
+        "timeout": 10,
+        "validate_ssl": false,
+        "period": 60,
+        "content_matcher": "",
+        "mask_headers": false,
+        "acceptable_response_codes": [
+          "CLASS_2XX"
+        ],
+        "request_headers": {}
+      }
+    },
+    "httpRequest": {
+      "requestMethod": "GET",
+      "requestUrl": "34.30.254.241:80",
+      "latency": "10s",
+      "protocol": "HTTP"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "project_id": "qwiklabs-gcp-03-ab8887b90483",
+        "zone": "us-central1-a",
+        "instance_id": "6416223712158181714"
+      }
+    },
+    "timestamp": "2023-03-12T15:12:34.118331484Z",
+    "severity": "NOTICE",
+    "labels": {
+      "check_id": "frontend-servers-uptime-IQMJ4enIDW4",
+      "checker_location": "usa-iowa"
+    },
+    "logName": "projects/qwiklabs-gcp-03-dba14152469e/logs/monitoring.googleapis.com%2Fuptime_checks",
+    "receiveTimestamp": "2023-03-12T15:12:34.461877656Z"
+  },
+  {
+    "insertId": "opcx4zfain6bg",
+    "jsonPayload": {
+      "google.monitoring.v3.UptimeCheckResult": {
+        "error_code": "HOST_UNREACHABLE",
+        "content_mismatch": false
+      },
+      "google.monitoring.v3.UptimeCheckConfig": {
+        "content_matcher": "",
+        "period": 60,
+        "validate_ssl": false,
+        "acceptable_response_codes": [
+          "CLASS_2XX"
+        ],
+        "timeout": 10,
+        "request_headers": {},
+        "mask_headers": false
+      }
+    },
+    "httpRequest": {
+      "requestMethod": "GET",
+      "requestUrl": "34.30.254.241:80",
+      "latency": "10s",
+      "protocol": "HTTP"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "zone": "us-central1-a",
+        "project_id": "qwiklabs-gcp-03-ab8887b90483",
+        "instance_id": "6416223712158181714"
+      }
+    },
+    "timestamp": "2023-03-12T15:12:34.428959516Z",
+    "severity": "NOTICE",
+    "labels": {
+      "checker_location": "eur-belgium",
+      "check_id": "frontend-servers-uptime-IQMJ4enIDW4"
+    },
+    "logName": "projects/qwiklabs-gcp-03-dba14152469e/logs/monitoring.googleapis.com%2Fuptime_checks",
+    "receiveTimestamp": "2023-03-12T15:12:34.567418171Z"
+  },
+  {
+    "insertId": "1sdu17vf80kfpc",
+    "jsonPayload": {
+      "google.monitoring.v3.UptimeCheckConfig": {
+        "mask_headers": false,
+        "content_matcher": "",
+        "request_headers": {},
+        "validate_ssl": false,
+        "timeout": 10,
+        "period": 60,
+        "acceptable_response_codes": [
+          "CLASS_2XX"
+        ]
+      },
+      "google.monitoring.v3.UptimeCheckResult": {
+        "content_mismatch": false,
+        "error_code": "HOST_UNREACHABLE"
+      }
+    },
+    "httpRequest": {
+      "requestMethod": "GET",
+      "requestUrl": "34.30.254.241:80",
+      "latency": "10s",
+      "protocol": "HTTP"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "project_id": "qwiklabs-gcp-03-ab8887b90483",
+        "zone": "us-central1-a",
+        "instance_id": "6416223712158181714"
+      }
+    },
+    "timestamp": "2023-03-12T15:12:46.249952227Z",
+    "severity": "NOTICE",
+    "labels": {
+      "checker_location": "usa-oregon",
+      "check_id": "frontend-servers-uptime-IQMJ4enIDW4"
+    },
+    "logName": "projects/qwiklabs-gcp-03-dba14152469e/logs/monitoring.googleapis.com%2Fuptime_checks",
+    "receiveTimestamp": "2023-03-12T15:12:46.344409838Z"
+  },
+  {
+    "insertId": "dbi25ff9mg1es",
+    "jsonPayload": {
+      "google.monitoring.v3.UptimeCheckResult": {
+        "error_code": "HOST_UNREACHABLE",
+        "content_mismatch": false
+      },
+      "google.monitoring.v3.UptimeCheckConfig": {
+        "mask_headers": false,
+        "acceptable_response_codes": [
+          "CLASS_2XX"
+        ],
+        "validate_ssl": false,
+        "request_headers": {},
+        "timeout": 10,
+        "period": 60,
+        "content_matcher": ""
+      }
+    },
+    "httpRequest": {
+      "requestMethod": "GET",
+      "requestUrl": "34.30.254.241:80",
+      "latency": "10s",
+      "protocol": "HTTP"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "instance_id": "6416223712158181714",
+        "project_id": "qwiklabs-gcp-03-ab8887b90483",
+        "zone": "us-central1-a"
+      }
+    },
+    "timestamp": "2023-03-12T15:12:46.591478293Z",
+    "severity": "NOTICE",
+    "labels": {
+      "check_id": "frontend-servers-uptime-IQMJ4enIDW4",
+      "checker_location": "usa-virginia"
+    },
+    "logName": "projects/qwiklabs-gcp-03-dba14152469e/logs/monitoring.googleapis.com%2Fuptime_checks",
+    "receiveTimestamp": "2023-03-12T15:12:46.679390317Z"
+  },
+  {
+    "insertId": "1es63pmf45i1w0",
+    "jsonPayload": {
+      "google.monitoring.v3.UptimeCheckResult": {
+        "error_code": "HOST_UNREACHABLE",
+        "content_mismatch": false
+      },
+      "google.monitoring.v3.UptimeCheckConfig": {
+        "timeout": 10,
+        "validate_ssl": false,
+        "content_matcher": "",
+        "request_headers": {},
+        "acceptable_response_codes": [
+          "CLASS_2XX"
+        ],
+        "mask_headers": false,
+        "period": 60
+      }
+    },
+    "httpRequest": {
+      "requestMethod": "GET",
+      "requestUrl": "34.30.254.241:80",
+      "latency": "10s",
+      "protocol": "HTTP"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "zone": "us-central1-a",
+        "project_id": "qwiklabs-gcp-03-ab8887b90483",
+        "instance_id": "6416223712158181714"
+      }
+    },
+    "timestamp": "2023-03-12T15:13:07.190083356Z",
+    "severity": "NOTICE",
+    "labels": {
+      "check_id": "frontend-servers-uptime-IQMJ4enIDW4",
+      "checker_location": "sa-brazil-sao_paulo"
+    },
+    "logName": "projects/qwiklabs-gcp-03-dba14152469e/logs/monitoring.googleapis.com%2Fuptime_checks",
+    "receiveTimestamp": "2023-03-12T15:13:07.374069597Z"
+  },
+  {
+    "insertId": "1bg67c9f95nxl5",
+    "jsonPayload": {
+      "google.monitoring.v3.UptimeCheckConfig": {
+        "period": 60,
+        "mask_headers": false,
+        "validate_ssl": false,
+        "content_matcher": "",
+        "request_headers": {},
+        "timeout": 10,
+        "acceptable_response_codes": [
+          "CLASS_2XX"
+        ]
+      },
+      "google.monitoring.v3.UptimeCheckResult": {
+        "error_code": "HOST_UNREACHABLE",
+        "content_mismatch": false
+      }
+    },
+    "httpRequest": {
+      "requestMethod": "GET",
+      "requestUrl": "34.30.254.241:80",
+      "latency": "10s",
+      "protocol": "HTTP"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "instance_id": "6416223712158181714",
+        "zone": "us-central1-a",
+        "project_id": "qwiklabs-gcp-03-ab8887b90483"
+      }
+    },
+    "timestamp": "2023-03-12T15:13:19.470255399Z",
+    "severity": "NOTICE",
+    "labels": {
+      "check_id": "frontend-servers-uptime-IQMJ4enIDW4",
+      "checker_location": "apac-singapore"
+    },
+    "logName": "projects/qwiklabs-gcp-03-dba14152469e/logs/monitoring.googleapis.com%2Fuptime_checks",
+    "receiveTimestamp": "2023-03-12T15:13:19.745546043Z"
+  },
+  {
+    "insertId": "o51qo8f4lvwl1",
+    "jsonPayload": {
+      "google.monitoring.v3.UptimeCheckResult": {
+        "error_code": "HOST_UNREACHABLE",
+        "content_mismatch": false
+      },
+      "google.monitoring.v3.UptimeCheckConfig": {
+        "validate_ssl": false,
+        "content_matcher": "",
+        "request_headers": {},
+        "timeout": 10,
+        "period": 60,
+        "acceptable_response_codes": [
+          "CLASS_2XX"
+        ],
+        "mask_headers": false
+      }
+    },
+    "httpRequest": {
+      "requestMethod": "GET",
+      "requestUrl": "34.30.254.241:80",
+      "latency": "10s",
+      "protocol": "HTTP"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "project_id": "qwiklabs-gcp-03-ab8887b90483",
+        "instance_id": "6416223712158181714",
+        "zone": "us-central1-a"
+      }
+    },
+    "timestamp": "2023-03-12T15:13:34.127890487Z",
+    "severity": "NOTICE",
+    "labels": {
+      "check_id": "frontend-servers-uptime-IQMJ4enIDW4",
+      "checker_location": "usa-iowa"
+    },
+    "logName": "projects/qwiklabs-gcp-03-dba14152469e/logs/monitoring.googleapis.com%2Fuptime_checks",
+    "receiveTimestamp": "2023-03-12T15:13:34.191182541Z"
+  },
+  {
+    "insertId": "16gnj4dfai9l21",
+    "jsonPayload": {
+      "google.monitoring.v3.UptimeCheckConfig": {
+        "mask_headers": false,
+        "timeout": 10,
+        "content_matcher": "",
+        "request_headers": {},
+        "acceptable_response_codes": [
+          "CLASS_2XX"
+        ],
+        "period": 60,
+        "validate_ssl": false
+      },
+      "google.monitoring.v3.UptimeCheckResult": {
+        "content_mismatch": false,
+        "error_code": "HOST_UNREACHABLE"
+      }
+    },
+    "httpRequest": {
+      "requestMethod": "GET",
+      "requestUrl": "34.30.254.241:80",
+      "latency": "10s",
+      "protocol": "HTTP"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "zone": "us-central1-a",
+        "instance_id": "6416223712158181714",
+        "project_id": "qwiklabs-gcp-03-ab8887b90483"
+      }
+    },
+    "timestamp": "2023-03-12T15:13:34.449762070Z",
+    "severity": "NOTICE",
+    "labels": {
+      "checker_location": "eur-belgium",
+      "check_id": "frontend-servers-uptime-IQMJ4enIDW4"
+    },
+    "logName": "projects/qwiklabs-gcp-03-dba14152469e/logs/monitoring.googleapis.com%2Fuptime_checks",
+    "receiveTimestamp": "2023-03-12T15:13:34.599285213Z"
+  },
+  {
+    "insertId": "12apdrmf6uau8b",
+    "jsonPayload": {
+      "google.monitoring.v3.UptimeCheckConfig": {
+        "mask_headers": false,
+        "request_headers": {},
+        "acceptable_response_codes": [
+          "CLASS_2XX"
+        ],
+        "timeout": 10,
+        "validate_ssl": false,
+        "period": 60,
+        "content_matcher": ""
+      },
+      "google.monitoring.v3.UptimeCheckResult": {
+        "error_code": "HOST_UNREACHABLE",
+        "content_mismatch": false
+      }
+    },
+    "httpRequest": {
+      "requestMethod": "GET",
+      "requestUrl": "34.30.254.241:80",
+      "latency": "10s",
+      "protocol": "HTTP"
+    },
+    "resource": {
+      "type": "gce_instance",
+      "labels": {
+        "zone": "us-central1-a",
+        "instance_id": "6416223712158181714",
+        "project_id": "qwiklabs-gcp-03-ab8887b90483"
+      }
+    },
+    "timestamp": "2023-03-12T15:13:46.595903988Z",
+    "severity": "NOTICE",
+    "labels": {
+      "checker_location": "usa-virginia",
+      "check_id": "frontend-servers-uptime-IQMJ4enIDW4"
+    },
+    "logName": "projects/qwiklabs-gcp-03-dba14152469e/logs/monitoring.googleapis.com%2Fuptime_checks",
+    "receiveTimestamp": "2023-03-12T15:13:46.670382423Z"
+  }
+]

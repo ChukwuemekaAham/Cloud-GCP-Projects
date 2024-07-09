@@ -10,12 +10,8 @@ qwiklabs-gcp-01-b943784ea87f
 AWS Username
 awsstudent
 AWS Password
-bPdh=!LC76zDNrmL
 AWS Access Key ID
-AKIA22XJ46YTUYRZCSEX
 AWS Secret Access Key
-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
-
 
 Objectives
 In this lab, you learn how to perform the following tasks:

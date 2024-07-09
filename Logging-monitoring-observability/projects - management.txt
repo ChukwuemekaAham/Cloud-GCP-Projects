@@ -1,0 +1,5 @@
+qwiklabs-gcp-03-dba14152469e as Monitoring Project.
+qwiklabs-gcp-03-ab8887b90483 as Worker 1. 	10.128.0.2 (nic0)	34.30.254.241 (nic0) 
+qwiklabs-gcp-00-9599124a1080 as Worker 2. 10.128.0.2 (nic0)	34.30.39.236 (nic0)
+
+frontend-servers-uptime-IQMJ4enIDW4

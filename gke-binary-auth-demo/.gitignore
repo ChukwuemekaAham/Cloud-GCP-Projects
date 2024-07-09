@@ -1,0 +1,27 @@
+# OSX leaves these everywhere on SMB shares
+._*
+
+# OSX trash
+.DS_Store
+
+# Emacs save files
+*~
+\#*\#
+.\#*
+
+# Vim-related files
+[._]*.s[a-w][a-z]
+[._]s[a-w][a-z]
+*.un~
+Session.vim
+.netrwhist
+
+test/__pycache__
+
+# Generated files
+policy.yaml
+generated-key.pgp
+generated_payload.json
+generated_signature.pgp
+iam_request.json
+note_payload.json
